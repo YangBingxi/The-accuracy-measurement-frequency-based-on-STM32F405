@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"equiprecision_measurement\system_stm32f4xx.o"
+"equiprecision_measurement\main.o"
+"equiprecision_measurement\tim.o"
+"equiprecision_measurement\stm32f4xx_it.o"
+"equiprecision_measurement\gpio.o"
+"equiprecision_measurement\stm32f4xx_hal_msp.o"
+"equiprecision_measurement\usart.o"
+"equiprecision_measurement\stm32f4xx_hal_tim.o"
+"equiprecision_measurement\stm32f4xx_hal_pwr_ex.o"
+"equiprecision_measurement\stm32f4xx_hal_flash_ramfunc.o"
+"equiprecision_measurement\stm32f4xx_hal.o"
+"equiprecision_measurement\stm32f4xx_hal_cortex.o"
+"equiprecision_measurement\stm32f4xx_hal_gpio.o"
+"equiprecision_measurement\stm32f4xx_hal_rcc.o"
+"equiprecision_measurement\stm32f4xx_hal_flash.o"
+"equiprecision_measurement\stm32f4xx_hal_uart.o"
+"equiprecision_measurement\stm32f4xx_hal_flash_ex.o"
+"equiprecision_measurement\stm32f4xx_hal_tim_ex.o"
+"equiprecision_measurement\stm32f4xx_hal_dma_ex.o"
+"equiprecision_measurement\stm32f4xx_hal_dma.o"
+"equiprecision_measurement\stm32f4xx_hal_pwr.o"
+"equiprecision_measurement\stm32f4xx_hal_rcc_ex.o"
+"equiprecision_measurement\startup_stm32f405xx.o"
+--library_type=microlib --strict --scatter "Equiprecision_measurement\Equiprecision_measurement.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Equiprecision_measurement.map" -o Equiprecision_measurement\Equiprecision_measurement.axf
